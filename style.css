@@ -18,8 +18,8 @@
   --color-10a: #d86754;
   --color-10b: #fccb5e;
   /* you could add an accent color for CTAs and anchor tags ;-) */
-  --fonnt-primary: "Abril Fatface", cursive;
-  --font-secondary: "Lato", sans-serif;
+  --fonnt-primary: "Open Sans", sans-serif;
+  --font-secondary: "Average Sans", sans-serif;
   /*Margins*/
   --m: 1rem;
   --ms: 0.5rem;
@@ -66,16 +66,12 @@
 /* Fonts */
 
 /*Primary Font*/
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-/* font-family: 'Abril Fatface', cursive; */
-/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
-/*font-family: 'Playfair Display', serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+/* font-family: 'Open Sans', sans-serif; */
 
 /*Seconary Font*/
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"); */
-/*font-family: 'Lato', sans-serif;*/
-/* font-family: 'Oxygen', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Average+Sans&display=swap");
+/* font-family: 'Average Sans', sans-serif; */
 
 html {
   font-size: 16px;
@@ -86,6 +82,7 @@ html {
 h1,
 h2,
 h3 {
+  font-family: var(--fonnt-primary);
   color: var(--color-30a);
 }
 
@@ -95,19 +92,16 @@ h2 {
 }
 
 h1 {
-  font-family: var(--fonnt-primary);
   /* font-style: oblique; */
   /* font-weight: 900; */
   font-size: 3.815rem;
 }
 
 h2 {
-  font-family: var(--font-primary);
   font-size: 1.953rem;
 }
 
 h3 {
-  font-family: var(--font-primary);
   font-size: 1.25rem;
   padding: var(--ptb);
 }
@@ -211,9 +205,12 @@ nav {
 }
 
 nav a {
-  color: var(--color-30b);
+  font-family: var(--fonnt-primary);
+  text-transform: uppercase;
   text-decoration: none;
   font-size: 2rem;
+  font-weight: 900;
+  color: var(--color-30b);
 }
 
 /* Header */
